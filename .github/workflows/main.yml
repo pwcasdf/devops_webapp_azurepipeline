@@ -27,7 +27,7 @@ jobs:
         - name: Azure WebApp
           uses: Azure/webapps-deploy@v2
           with:
-            app-name: 'app-devopstest-001'
+            app-name: "app-devopstest-001"
             images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/devopstest:${{ github.sha }}
 
         - name: Azure logout
